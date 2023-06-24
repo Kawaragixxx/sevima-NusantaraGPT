@@ -1,0 +1,21 @@
+Kode terlebih dahulu mengimpor dependensi yang diperlukan, termasuk pustaka OpenAI, yang digunakan untuk mengakses model bahasa GPT-3. Ini kemudian menyetel variabel lingkungan OPENAI_API_KEY ke kunci API yang telah Anda peroleh dari OpenAI.
+
+Kode kemudian mendefinisikan yang berikut:
+
+ Template judul yang digunakan untuk membuat judul.
+ Templat skrip yang digunakan untuk membuat skrip video.
+ Dua memori, satu untuk judul dan satu untuk naskah. Memori ini digunakan untuk menyimpan permintaan dan tanggapan sebelumnya, sehingga model bahasa dapat belajar darinya.
+ Objek LLMChain untuk judul dan satu lagi untuk skrip. Objek ini digunakan untuk menjalankan model bahasa pada prompt dan menghasilkan judul dan skrip.
+ Objek WikipediaAPIWrapper yang digunakan untuk mendapatkan informasi dari Wikipedia.
+
+Kode kemudian meminta pengguna untuk memasukkan prompt. Jika pengguna memasukkan prompt, kode kemudian menjalankan model bahasa pada prompt dan menghasilkan judul dan skrip. Judul dan skrip kemudian ditampilkan kepada pengguna. Kode tersebut juga menampilkan riwayat judul dan skrip, serta penelitian Wikipedia yang dilakukan.
+
+Berikut adalah penjelasan langkah demi langkah tentang cara kerja kode:
+
+1. Kode mengimpor dependensi yang diperlukan.
+2. Kode menetapkan variabel lingkungan OPENAI_API_KEY.
+3. Kode menentukan templat judul, templat skrip, memori, objek LLMChain, dan objek WikipediaAPIWrapper.
+4. Kode tersebut meminta pengguna untuk memasukkan prompt.
+5. Jika pengguna memasukkan prompt, kode menjalankan model bahasa pada prompt dan menghasilkan judul dan skrip.
+6. Judul dan skrip kemudian ditampilkan kepada pengguna.
+7. Kode juga menampilkan riwayat judul dan skrip, serta penelitian Wikipedia yang dilakukan.
